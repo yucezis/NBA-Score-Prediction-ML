@@ -25,12 +25,12 @@ The primary objective is to build a predictive model that estimates a player's *
 To determine which factors most heavily influence scoring, I generated a correlation matrix of all features.
 > **Insight:** The heatmap confirms that **Field Goals (FG)**, **Field Goal Attempts (FGA)**, and **Minutes Played (MP)** have the highest positive correlation with Points (PTS).
 
-![Correlation Heatmap](https://r.resimlink.com/zv7Ox.png)
+![Correlation Heatmap](images/HEATMAP.png)
 
 ### 2. Statistical Distribution (Normality Check)
 Before applying Linear Regression, I analyzed the distribution of key variables. The histogram below shows the distribution of **Field Goals (FG)**. The curve helps visualize the skewness and kurtosis, guiding the decision on feature scaling and normalization.
 
-![Field Goals Distribution](https://r.resimlink.com/Omf6PniZ.png)
+![Field Goals Distribution](images/carpiklik.png)
 
 ---
 
@@ -40,7 +40,7 @@ As part of the analysis, the system identified and ranked the top performing pla
 
 > **Observation:** Nikola Jokić, Shai Gilgeous-Alexander, and Giannis Antetokounmpo lead the league in efficiency and scoring impact.
 
-![Top 12 Players Table](https://r.resimlink.com/quFL8fidZ.png)
+![Top 12 Players Table](images/top_12.png)
 
 ---
 
@@ -52,7 +52,7 @@ The Linear Regression model was tested on a 20% holdout dataset. The scatter plo
 * **R² Score:** ~0.95 (High Accuracy)
 * **Trend:** The points tightly follow the red diagonal line, indicating that the model generalizes well and makes highly accurate predictions with minimal error variance.
 
-![Actual vs Predicted](https://r.resimlink.com/SljZpH.png)
+![Actual vs Predicted](images/tahmin.png)
 
 ---
 
